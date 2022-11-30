@@ -13,7 +13,7 @@ path = 'plots'
 
 # Build GIF
 with imageio.get_writer('mygif.gif', mode='I') as writer:
-    for i in range(0, 6000, 10):
+    for i in range(0, 6000, 50):
         filename = f'plots/{i}.png'
         image = imageio.imread(filename)
         writer.append_data(image)
